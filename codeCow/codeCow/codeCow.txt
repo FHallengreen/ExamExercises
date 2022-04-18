@@ -1,0 +1,7 @@
+Opgave Code: Ko
+
+1. Lav en klasse ved navn Cow med attributten foodSources (Find selv ud af hvilket data type dette skal være)
+
+2. Tilføj en metode ved navn "addFoodSource" der tager imod en String og tilføjer den til foodSources hvis ikke den eksistere i forvejen og bogstavet "a" ikke eksistere i input-Stringen
+
+3. Tilføj metode ved navn "Print Foodsources" som kan printe all foodSources ko'en kan lide at spise. Metoden skal printe foodsources bagfra og skal kun printe hvert andet element.

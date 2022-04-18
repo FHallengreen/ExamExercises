@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class Cow {
   private ArrayList <String> foodSource = new ArrayList<>();
@@ -10,9 +11,12 @@ public class Cow {
       }
   }
 
-  public ArrayList<String> printFoodSources(){
+  public void printFoodSources(){
     Collections.reverse(foodSource);
-    return foodSource;
+    for (int i = 0; i < foodSource.size(); i=i+2) {
+      System.out.println(foodSource.get(i));
+    }
+   
   }
 
 }

@@ -6,6 +6,7 @@ public class Main {
   obj.addFoodSource("Korn");
   obj.addFoodSource("Vand");
   obj.addFoodSource("Ananas");
-    System.out.println(obj.printFoodSources());
+  obj.addFoodSource("Fløde");
+    obj.printFoodSources();
   }
 }
