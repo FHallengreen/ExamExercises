@@ -25,7 +25,8 @@ public class Cat {
     }else isSneaky = false;
   }
 
-  public void isCatSneaky(){
+  public void isCatSneaky(Cat cat){
+    isSneaky(cat);
     if (isSneaky){
       for (int i = 0; i < 100; i++) {
         System.out.println(i);
