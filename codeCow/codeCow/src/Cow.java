@@ -16,7 +16,5 @@ public class Cow {
     for (int i = 0; i < foodSource.size(); i=i+2) {
       System.out.println(foodSource.get(i));
     }
-   
   }
-
 }
