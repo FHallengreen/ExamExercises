@@ -5,4 +5,7 @@ public class TrainRail {
     this.railLength = railLength;
   }
 
+  public int getRailLength() {
+    return railLength;
+  }
 }
