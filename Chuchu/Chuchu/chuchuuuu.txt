@@ -1,0 +1,11 @@
+Historien om Toget og togbanen
+
+1. Opret klassen trainrail(togbane). Denne klasse har en enkel attribut som er længden på togbanen, en konstruktør man kan indgive denne længde samt en metode der retunere længden på togbanen
+
+2. Opret klassen Train. Denne klasse har følgende attributer: trainrail, amountOfPassengers, amounOfWagons.. Disse variable skal alle gives ind via en konstruktør
+
+3. lav en metode "ridingTheRail" i klassen Train: For hvert element/længde på togets togbane skal der printes "chuuchuuuu"
+
+4. lav en metode "tooManyPassengers" hvis der er flere passengere end der er vogne skal denne metode retunere false, ellers skal denne metode retunere true (Ja, hver passenger skal have sin egen tog vogn)
+
+5. Udvid "ridingTheRail". Den skal nu kalde metoden "tooManyPassengers". Hvis metoden "tooManyPassengers" retunere false skal toget ikke kører nogen steder, ellers skal det kører som normalt
