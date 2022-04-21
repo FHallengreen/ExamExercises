@@ -1,0 +1,8 @@
+1. Lav klassen "FredesFaergeValidator"
+
+2. Opret metode ved navn "wantsToBang" som retunere en boolean og tager imod en interger. Denne metode skal return true på alt vægt over 140kg og ellers skal den retunere false
+
+3. Opret en metode "iBangTheseBitches" som tager imod en integer og kalder metoden "wantsToBang" hvis wantsToBang retunere true tilføj da denne nye vægt til en liste af ints som repræsentere en liste af færger vi gerne vil knalde
+
+4. Editer metoden "iBangTheseBitches" så man ikke tilføjer ekstra bitches til sin bang-liste hvis man overstiger den max totale vægt: 1 ton. (1 ton kan aligevel godt være nok færge for en frede for en periode)
+
