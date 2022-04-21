@@ -11,14 +11,13 @@ public class Train {
   }
 
 
-  public String ridingTheRail(){
+  public void ridingTheRail(){
     if (!tooManyPassengers()){
-    return "Train not leaving";
+      System.out.println("Train not leaving");
     }
     for (int i = 0; i < trainRail.getRailLength(); i++) {
       System.out.println("Chuchuuuu");
     }
-    return "";
   }
 
   public boolean tooManyPassengers(){

@@ -1,0 +1,10 @@
+1. Opret en klasse ved navn Cat, en cat er meget snedig alt efter hvor meget den vejer samt dens størrelse, så man vil gerne kende følgende op katten:
+Højde, Bredde, vægt, baby/voksen kat
+
+2. Opret en metode ved navn: isSneaky der retunere typen boolean. Metoden skal retunere true hvis en af følgende scenarier er sande:
+Scenario 1. Katten er max 50 i højde og Katten er max 30 i bredde og det er en voksen kat
+Scenario 2. Katten vejer under 20 vægt og det er en voksen kat
+Scenario 3. Hvis det er en baby kat, er katten altid sneaky
+Hvis ingen af disse er opfyldt er katten ikke sneaky
+
+3. Opret en metode som tester hvorvidt en instans af en kat er sneaky, hvis den er sneaky print alle tal fra 1 til og med 99. Hvis katten ikke er sneaky, print "ikke sneaky"
