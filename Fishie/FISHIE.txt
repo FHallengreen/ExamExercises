@@ -1,0 +1,6 @@
+1. Opret klassen Fish
+
+2. Lav en metode "fishieLikes" der modtager en string og har return typen void. Hvis fisken kan lide stringen(inputtet) tilføj den da til listen af ting fisken kan lide.
+- Fisken kan kun lide ting der har bogstavet "c" i sig minimum 1 gang, og bogstavet "a" i sig mindst 3 gange.
+
+3. Lav en metode "foodChecker" som har return typen boolean. Denne metode skal checke at der ikke er kommet noget på fiskens food-liste som fisken ikke kan lide at spise
