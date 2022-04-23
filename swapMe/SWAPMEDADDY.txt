@@ -1,0 +1,12 @@
+1. Opret klassen ListContainer.. Denne klasse har 2 int arrays begge på størelsen 10. Det ene array heddder ones og indeholder 1-taller, 
+ligeledes hedder det andet array twos og indeholder 2taller. Disse lister skal kunne hentes ud af klassen via. en getter
+
+2. Opret klassen ListSwapper, lav metoden swapTheLists i denne klasse, denne metode tager imod 2 int arrays 
+(De skal være af samme længde, hvis de ikke er det, så skal metoden printe "not same length" uden andet sker). 
+Hvis listerne er af samme længde, så vil vi gerne bytte alle elementerne fra den ene liste med elementer fra den anden liste
+
+3. Lav metoden swapTwoElements i klassen ListSwapper, denne metode tager imod et array samt 2 indexes i et array. 
+Formålet med metoden er at værdierne på de 2 indexes bliver byttet. 
+Før swappet skal array'et printes og ligeledes skal det printes efter swappet for at se at det har taget sted
+
+4. Vis at funktionaliteten virker i en Main klasse
