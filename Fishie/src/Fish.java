@@ -22,8 +22,8 @@ public class Fish {
     }
     if (countA >= 3 || countC >= 1) {
       fishyLikes.add(food);
-      foodChecker(countA, countC);
     }
+    foodChecker(countA, countC);
   }
 
 
