@@ -2,11 +2,7 @@ import java.util.ArrayList;
 
 public class Fish {
 
-  private ArrayList<String> fishyLikes = new ArrayList<>();
-  int countC;
-  int countA;
-  char c = 'c';
-  char a = 'a';
+private ArrayList <String> fishyLikes= new ArrayList<>();
 
   public void fishieLikes(String food) {
 
@@ -14,10 +10,10 @@ public class Fish {
     int countA = 0;
 
     for (int i = 0; i < food.length(); i++) {
-      if (food.charAt(i) == c) {
+      if (food.charAt(i) == 'c') {
         countC++;
       }
-      if (food.charAt(i) == a) {
+      if (food.charAt(i) == 'a') {
         countA++;
       }
     }
@@ -28,17 +24,19 @@ public class Fish {
 
 
   public boolean foodChecker() {
+    int countC = 0;
+    int countA = 0;
     for (int i = 0; i < fishyLikes.size(); i++) {
-      String firstFish = fishyLikes.get(i);
+      String firstFish = fishyLikes.get(i).toLowerCase();
       for (int j = 0; j < firstFish.length(); j++) {
-        if (firstFish.indexOf(i) == c) {
+        if (firstFish.indexOf(i) == 'c') {
           countC++;
-        } else if (firstFish.indexOf(i) == a) {
+        } else if (firstFish.indexOf(i) == 'a') {
           countA++;
         }
-      }
-      if ((countC >= 1) || (countA >= 3)) {
-        return false;
+        if ((countC > 1) || (countA > 3)) {
+          return false;
+        }
       }
       countA = 0;
       countC = 0;
