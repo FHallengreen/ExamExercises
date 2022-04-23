@@ -5,15 +5,25 @@ public class Fish {
   private ArrayList<String> fishyLikes = new ArrayList<>();
 
   public void fishieLikes(String food) {
-      if (food.contains("c")) {
-        fishyLikes.add(food);
-        foodChecker();
-      } else if ((food.contains("a"))) {
-        fishyLikes.add(food);
-        foodChecker();
+    char c = 'c';
+    int countC = 0;
+    char a = 'a';
+    int countA = 0;
+
+    for (int i = 0; i < food.length(); i++) {
+      if (food.charAt(i) == c) {
+        countC++;
       }
-      System.out.println(fishyLikes);
+      if (food.charAt(i) == a) {
+        countA++;
+      }
     }
+    if (countA >= 3 || countC >= 1) {
+      fishyLikes.add(food);
+      System.out.println(fishyLikes);
+      System.out.println(foodChecker());
+    }
+  }
 
 
   public boolean foodChecker() {
