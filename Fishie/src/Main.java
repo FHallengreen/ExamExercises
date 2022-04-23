@@ -6,6 +6,6 @@ public class Main {
     fish.fishieLikes("Cigaretter".toLowerCase());
     fish.fishieLikes("Torsk".toLowerCase());
     fish.fishieLikes("Lampe".toLowerCase());
-
+    System.out.println(fish.foodChecker());
   }
 }
