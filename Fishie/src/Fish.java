@@ -7,6 +7,7 @@ public class Fish {
   int countA;
   char c = 'c';
   char a = 'a';
+
   public void fishieLikes(String food) {
 
     int countC = 0;
@@ -30,20 +31,19 @@ public class Fish {
     int countC = 0;
     int countA = 0;
     for (int i = 0; i < fishyLikes.size(); i++) {
-      String firstFish = String.valueOf(fishyLikes.subList(i,i++));
+      String firstFish = fishyLikes.get(i);
       for (int j = 0; j < firstFish.length(); j++) {
-        if (firstFish.indexOf(i) == c){
+        if (firstFish.charAt(i) == c) {
           countC++;
-        }
-        else if (fishyLikes.indexOf(i) == a){
+        } else if (firstFish.charAt(i) == a) {
           countA++;
         }
       }
     }
-
-      if ((countC >= 1) || (countA >= 3)) {
-        return true;
+    if ((countC >= 1) || (countA >= 3)) {
+      return true;
     }
     return false;
   }
 }
+
