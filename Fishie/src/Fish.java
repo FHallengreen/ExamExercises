@@ -38,12 +38,15 @@ public class Fish {
         } else if (firstFish.charAt(i) == a) {
           countA++;
         }
+
+        if ((countC >= 1) || (countA >= 3)) {
+          return false;
+        }
       }
+      countA = 0;
+      countC = 0;
     }
-    if ((countC >= 1) || (countA >= 3)) {
-      return true;
-    }
-    return false;
+    return true;
   }
 }
 
