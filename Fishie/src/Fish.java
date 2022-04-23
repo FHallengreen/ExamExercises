@@ -3,12 +3,14 @@ import java.util.ArrayList;
 public class Fish {
 
   private ArrayList<String> fishyLikes = new ArrayList<>();
+  int countC;
+  int countA;
 
   public void fishieLikes(String food) {
-    char c = 'c';
     int countC = 0;
-    char a = 'a';
     int countA = 0;
+    char c = 'c';
+    char a = 'a';
 
     for (int i = 0; i < food.length(); i++) {
       if (food.charAt(i) == c) {
@@ -20,18 +22,15 @@ public class Fish {
     }
     if (countA >= 3 || countC >= 1) {
       fishyLikes.add(food);
-      System.out.println(fishyLikes);
-      System.out.println(foodChecker());
+      foodChecker(countA, countC);
     }
   }
 
 
-  public boolean foodChecker() {
-    for (int i = 0; i < fishyLikes.size(); i++) {
-      if (fishyLikes.indexOf("c") >= 1 || (fishyLikes.indexOf("a") > 3)) {
-        return false;
-      }
+  public boolean foodChecker(int countA, int countC) {
+      if ((countC >= 1) || (countA >= 3)) {
+        return true;
     }
-    return true;
+    return false;
   }
 }
