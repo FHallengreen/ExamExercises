@@ -1,0 +1,41 @@
+Se denne film: https://www.youtube.com/watch?v=g-PGLbMth_g
+
+Lav en klasse "SelectionSort"
+
+paste følgende kode ind i klassen:
+
+public class SelectionSort {
+
+    private int[] array;
+
+    public SelectionSort(int[] array) {
+        this.array = array;
+    }
+
+
+    public int[] sort() {
+
+
+        return array;
+    }
+
+    public void printArray(){
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int[] array = { 10,8,2,3,5,1,9,7,4,6 };
+    
+        SelectionSort selectionSort = new SelectionSort(array);
+        selectionSort.printArray();
+
+    }
+    
+}
+
+
+Opgave:
+Udfyld metoden "sort" så arrayet er sorteret når det bliver printet nede i main. Den eneste metode du behøver at pille ved for at få dette til at lykkedes er "sort"
