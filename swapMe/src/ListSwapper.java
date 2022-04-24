@@ -3,23 +3,20 @@ import java.util.Arrays;
 public class ListSwapper {
 
   ListContainer container = new ListContainer();
-  public void swapTheLists(int [] threes, int [] fours){
-    if (threes.length != fours.length){
-      System.out.println("Not same length");
+
+  public void swapTwoElements(int [] array, int a, int b){
+    for (int i = 0; i < array.length; i++) {
+      array[i] = i+1;
     }
-    int[] tmp = fours;
-    fours = threes;
-    threes = tmp;
-  }
-
-  public void swapTwoElements(int [] array, int [] ones, int [] twos){
-    System.out.println(Arrays.toString(ones) + Arrays.toString(twos));
-
-    array = ones;
-    ones = twos;
-    twos = array;
-
-    System.out.println(Arrays.toString(ones) + Arrays.toString(twos));
-
+    System.out.println(Arrays.toString(array));
+    for (int i = 0; i < array.length; i++) {
+      if (array[i] == a){
+        array[i] = b;
+      }
+      else if ((array[i] == b)){
+        array[i] = a;
+      }
+    }
+    System.out.println(Arrays.toString(array));
   }
 }
